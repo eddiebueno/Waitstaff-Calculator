@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>Waitstaff Calculator</title>
+</head>
+<body>
+    <h1>
+        Waitstaff Calculator
+    </h1>
+
+    <section class="meal-deatils">
+        <h2>Enter the Meal Details</h2>
+        <form class="meal-details-form">
+            <label for="base-price">Base Meal Price: $<input id="base-price" type="number"></label>
+            
+            <label for="tax-rate">Tax  Rate: %<input id="tax-rate" type="number"></label>
+            
+            <label for="tip-percent">Tip Percent: %<input id="tip-percent" type="number"></label>
+            
+            <button id="meal-submit-btn">Submit</button>
+            <button id="meal-cancel-btn">Cancel</button>
+        </form>
+    </section>
+
+    <section class="customer-charges">
+        <h2>Customer Charges</h2>
+        <p>Subtotal <span id="customer-subtotal">0.00</span></p>
+        <p>Tip <span id="customer-tip">0.00</span></p>
+        <p>Total <span id="customer-total">0.00</span></p>
+
+    </section>
+
+    <section class="earnings">
+        <h2>My Earnings Info</h2>
+        <p>Tip Total: <span id="tip-total">0.00</span></p>
+        <p>Meal Count: <span id="meal-count">0.00</span></p>
+        <p>Average Tip Per Meal: <span id="avg-tip">0.00</span></p>
+    </section>
+
+    <button id="reset-btn">Reset</button>
+
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+</html>
